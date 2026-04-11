@@ -58,13 +58,13 @@ BMI = weight / ( height * height )
 
 ##  Setup Instructions
 
-### 1. Clone the Repository:
+1. Clone the Repository:
    
-       git clone <repolink>
+        git clone <repolink>
 
-### 2. Open the project folder
+2. Open the project folder
 
-### 3. Run index.html in your browser
+3. Run index.html in your browser
 
 
 ##  Concepts Practiced
