@@ -1,38 +1,56 @@
-## NUMBER GUESSING GAME
+##  ASYNC TASK VISUALISER
 
 ## Overview
 
-A simple & interactive Number Guessing Game built using HTML, CSS, Javascript. The player has to guess a randomly generated number between 1 and 100 within 10 attempts. Here:
+A simple & interactive web application built with HTML, CSS and Javascript to demonstrate how the Javascript Event Loop works, including the execution order of synchronous code, microtasks(Promises) & macrotasks(setTimeout).
 
-- Player enters a guess in the input field
-- The game provides hints
-        - 📉 Too low 
-        - 📈 Too high
-- if player guess correct number player wins 🎉
-- if all attempts are used Game ends and reveal the correct number
-- A "start new game" button resets everything for a fresh game
+## Objective
+
+This project helps to understand:
+
+- How Javascript handles asynchronous operations
+- The role of the Call Stack, Web APIs & Event Loop
+- The Difference between Microtask Queue vs Macrotask Queue
+- Why Promises execute before setTimeout
 
 ## Features
 
-- Input validation (only numbers between 1-100 )
-- Tracks previous guesses
-- Prevent duplicate guesses
-- Displays remaining attempts
-- Restart game functionality
-- Real time feedback ( low, high, correct )
+- Run button to trigger async tasks
+- Real-time output display
+- Demonstrates execution order: - Synchronous code - Microtask - Macrotask
+- Clean and Responsive UI
+- Scrollable output section for better useability
 
 ## Tech Stack
 
 - HTML5
-- CSS
-- Javascript(vanila JS)
+- CSS3
+- Javascript
 
-## Concepts Used
+## Concepts Covered
 
-- DOM Manipulation
-- Event Handling
-- Input Validation
-- Conditional Logic
+- Javascript Event Loop
+- Call Stack
+- Web APIs
+- Microtask Queue (Promises)
+- Macrotask Queue (setTimeout)
+- Non-blocking behaviour
+
+## Demo Behavior
+
+When you click the Run Tasks button, the output will be:
+
+```yaml
+START
+END
+Promise Microtask Executed
+Timeout Macrotask Executed
+```
+
+This Clearly shows that:
+
+- Synchronous code run first
+- Microtasks execute before Macrotasks
 
 ## Setup Instructions
 
@@ -43,6 +61,8 @@ A simple & interactive Number Guessing Game built using HTML, CSS, Javascript. T
 2.  Open the project folder
 
 3.  Run index.html in your browser
+
+4.  Click Run button and observe execution order in output
 
 ## Author
 
