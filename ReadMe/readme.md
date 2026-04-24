@@ -1,64 +1,66 @@
-##  setTimeout & clearTimeout Demo
+## Digital Clock (setInterval & clearInterval Demo)
 
-##  Overview
+## Overview
 
-seTimeout() is used to executed a specific piece of code or function after a delay in milliseconds and clearTimeout() cancels a delayed execution which was previously set by setTimeout(). In this project:
+setInterval() repeatedly calls a function or executes a code with a fixed time delay between each call. It continiues untill clearInterval() is called. Here a simple and elegant Digital Clock is built by using HTML, CSS and Javascript, demonstrating the real world use of setInterval() for updating time dynamically every second.
 
-- A text message automatically changes after 4 seconds using setTimeout()
-- A stop button allows the user to cancel the scheduled action using clearTimeout()
+## Features
 
-This helps to understand how asynchronous behavious works in Javascript.
-
-
-##  Features
-
-- Delayed text update (4 seconds)
-- Stop button to cancel the timeout
+- Real time Clock updates every second
+- Start button to begin the clock
+- Stop button to pause the clock
+- Button state management (disable/ enable logic) 
 - Simple and clean UI
-- Simple code for beginner
+- Displays the current system time in HH:MM:SS format with smooth UI styling
+
+## Demo
+
+- When the Start button is clicked:
+   
+   - setInterval() starts running every 1000ms (1 second)
+   - Current time is fetched using new Date()
+   - Time is displayed using toLocaleTimeString()
+   - Start button is disabled to prevent multiple intervals 
+
+- When the Stop button is clicked:
+    
+   - clearInterval() stops the clock
+   - Interval reference is cleared
+   - Stop button is disabled and Start button is re-enabled
 
 
-##  Demo
-
-1. Page loads with the message:
-           
-           This part is going to change after 4s
-
-2. After 4 seconds:
-          
-          Welcome to our world!
-
-3. If user clicks stop before 4 seconds:
-          
-          This part is going to change after 4s Change stopped!
-           
-
-##  Tech Stack
+## Tech Stack
 
 - HTML5
 - CSS
-- Javascript(vanila JS)
+- Javascript
 
-##  Concepts Practiced
+## Concepts Practiced
 
-- setTimeout()
-- clearTimeout()
+- setInterval() : for repeated execution
+- clearInterval() : to Stop execution
 - DOM Manipulation
 - Event listeners
 - Basic CSS styling
+- Button state control( disabled, enabled)
 
+## Set up Instructions
 
-##  Set up Instructions
-
-1. Clone the Repository:
+1.  Clone the Repository:
 
            git clone <repo-link>
 
-2. Open the project folder
+2.  Open the project folder
 
-3. Run index.html in your browser
+3.  Run index.html in your browser
 
 
-##  Author
+##   Future Improvements
+
+- Add Stopwatch feature
+- Add Countdown timer
+
+
+## Author
 
 Pratiksha Parihari
