@@ -1,30 +1,37 @@
-##  Background Colour Switcher
+##  setTimeout & clearTimeout Demo
 
 ##  Overview
 
-This is a background colour switcher project built with HTML, CSS and Javascript. The user can click one of several colour blocks and the page background changes to that colour. A messagebox updates dynamically to show which colour was selected and the selected block gets highlighted as active.
- 
- <hr>
+seTimeout() is used to executed a specific piece of code or function after a delay in milliseconds and clearTimeout() cancels a delayed execution which was previously set by setTimeout(). In this project:
+
+- A text message automatically changes after 4 seconds using setTimeout()
+- A stop button allows the user to cancel the scheduled action using clearTimeout()
+
+This helps to understand how asynchronous behavious works in Javascript.
+
 
 ##  Features
 
-- Change webpage background colour dynamically
-- Display selected colour message
-- Highlight currently selected colour block
-- Smooth message box animation
-- DOM manupulation project for beginner
+- Delayed text update (4 seconds)
+- Stop button to cancel the timeout
+- Simple and clean UI
+- Simple code for beginner
 
-<hr>
 
 ##  Demo
 
-Click on any colour block to:
+1. Page loads with the message:
+           
+           This part is going to change after 4s
 
-- Change the page background
-- See which colour was selected
-- Highlight the active block
+2. After 4 seconds:
+          
+          Welcome to our world!
 
-<hr>
+3. If user clicks stop before 4 seconds:
+          
+          This part is going to change after 4s Change stopped!
+           
 
 ##  Tech Stack
 
@@ -34,12 +41,23 @@ Click on any colour block to:
 
 ##  Concepts Practiced
 
-- DOM selection
-- Event Listeners
-- Event Object(e.target)
-- Dynamic styling
-- Class Manipulation
-- CSS transitions /animations
+- setTimeout()
+- clearTimeout()
+- DOM Manipulation
+- Event listeners
+- Basic CSS styling
+
+
+##  Set up Instructions
+
+1. Clone the Repository:
+
+           git clone <repo-link>
+
+2. Open the project folder
+
+3. Run index.html in your browser
+
 
 ##  Author
 

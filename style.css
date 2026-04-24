@@ -1,55 +1,29 @@
-.colorpicker {
-    width: 80%;
-    margin: 100px auto;
-    text-align: center;
-}
-
-h1 {
-    background-color: aquamarine;
-}
-
-span {
-    display: block;
-    background-color: aqua;
-}
-h2{
-    background-color:azure
-}
-.Block {
-    width: 100px;
-    height: 100px;
-    border: 5px solid black;
-    display: inline-block;
-    cursor: pointer;
-}
-
-#purple { background-color: purple; }
-#yellow { background-color: yellow; }
-#red { background-color: red; }
-#blue { background-color: blue; }
-#grey { background-color: grey }
-
-
-#messageBox {
-    display: none;
-    background-color: lightpink;
-    padding: 15px;
-    border-radius: 15px;
-    width: 50%;
-    margin: 20px auto;
-
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
-}
-
-#messageBox.show {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-.Block.active {
-    transform: scale(1.08);
-    box-shadow: 0 0 15px black;
-    border-color: white;
-}
+body {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        padding: 10px 25px;
+        margin-top: 30px;
+        border: none;
+        border-radius: 25px;
+        background-color: #ff6b6b;
+        color: white;
+        font-size: 26px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      button:hover {
+        background-color: #ff4757;
+        transform: scale(1o5);
+      }
+      button:active {
+        transform: scale(0.95);
+      }
+      #text {
+        background-color: yellow;
+        padding: 20px;
+        border: 2px solid red;
+      }
